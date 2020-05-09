@@ -69,6 +69,25 @@ NewBarkTown_TeacherStopsYouScene2:
 	special RestartMapMusic
 	end
 
+NewBarkTownTeacherScript2:
+	faceplayer
+	setflag ENGINE_FOGBADGE
+	givepoke TOTODILE, 20
+	promptbutton
+	verbosegiveitem HM_SURF
+	setevent EVENT_GOT_HM03_SURF
+	opentext
+	writetext Text_GodMode
+	waitbutton
+	closetext
+	end
+
+.MonIsAdorable:
+	writetext Text_YourMonIsAdorable
+	waitbutton
+	closetext
+	end
+
 NewBarkTownTeacherScript:
 	faceplayer
 	opentext
@@ -194,6 +213,10 @@ Text_GearIsImpressive:
 	line "it for you?"
 	done
 
+Text_GodMode:
+	text "GodMode Enabled!"
+	done
+
 Text_WaitPlayer:
 	text "Wait, <PLAY_G>!"
 	done
@@ -287,7 +310,7 @@ NewBarkTown_MapEvents:
 	warp_event 13,  5, PLAYERS_HOUSE_1F, 1
 	warp_event  3, 11, PLAYERS_NEIGHBORS_HOUSE, 1
 	warp_event 11, 13, ELMS_HOUSE, 1
-	warp_event 17,  5, ROUTE_31, 4
+	warp_event 17,  5, BURNED_TOWER_1F, 15
 
 	db 2 ; coord events
 	coord_event  1,  8, SCENE_DEFAULT, NewBarkTown_TeacherStopsYouScene1
@@ -299,7 +322,8 @@ NewBarkTown_MapEvents:
 	bg_event  3,  3, BGEVENT_READ, NewBarkTownElmsLabSign
 	bg_event  9, 13, BGEVENT_READ, NewBarkTownElmsHouseSign
 
-	db 3 ; object events
+	db 4 ; object events
 	object_event  6,  8, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownTeacherScript, -1
 	object_event 12,  9, SPRITE_FISHER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NewBarkTownFisherScript, -1
+	object_event 17,  7, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownTeacherScript2, -1
 	object_event  3,  2, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownSilverScript, EVENT_RIVAL_NEW_BARK_TOWN

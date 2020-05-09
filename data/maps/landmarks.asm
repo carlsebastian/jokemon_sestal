@@ -103,7 +103,7 @@ Landmarks:
 	landmark  20,  68, Route28Name
 	landmark 140, 116, FastShipName
 
-NewBarkTownName:     db "NEW BARK¯TOWN@"
+NewBarkTownName:     db "ASSBERG@"
 CherrygroveCityName: db "CHERRYGROVE¯CITY@"
 VioletCityName:      db "SKENE@"
 AzaleaTownName:      db "AZALEA TOWN@"

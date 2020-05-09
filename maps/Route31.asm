@@ -418,11 +418,10 @@ DarkCaveSignText:
 Route31_MapEvents:
 	db 0, 0 ; filler
 
-	db 4 ; warp events
+	db 3 ; warp events
 	warp_event  4,  6, ROUTE_31_VIOLET_GATE, 3
 	warp_event  4,  7, ROUTE_31_VIOLET_GATE, 4
 	warp_event 34,  5, DARK_CAVE_VIOLET_ENTRANCE, 1
-	warp_event 11,  3, NEW_BARK_TOWN, 5
 
 	db 0 ; coord events
 
