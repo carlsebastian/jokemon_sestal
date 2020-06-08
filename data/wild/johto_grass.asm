@@ -277,7 +277,7 @@ JohtoGrassWildMons:
 	; morn
 	db 13, RATTATA
 	db 14, KOFFING
-	db 15, RATTATA
+	db 15, CHARMANDER
 	db 14, ZUBAT
 	db 15, RATTATA
 	db 15, RATICATE
@@ -285,7 +285,7 @@ JohtoGrassWildMons:
 	; day
 	db 13, RATTATA
 	db 14, KOFFING
-	db 15, RATTATA
+	db 15, CHARMANDER
 	db 14, ZUBAT
 	db 15, RATTATA
 	db 15, RATICATE
@@ -293,7 +293,7 @@ JohtoGrassWildMons:
 	; nite
 	db 13, RATTATA
 	db 14, KOFFING
-	db 15, RATTATA
+	db 15, CHARMANDER
 	db 14, ZUBAT
 	db 15, RATTATA
 	db 15, RATICATE
@@ -1249,26 +1249,26 @@ JohtoGrassWildMons:
 	; morn
 	db 4, LEDYBA
 	db 4, CATERPIE
+	db 4, BULBASAUR
 	db 5, BELLSPROUT
 	db 5, PIDGEY
 	db 4, WEEDLE
-	db 5, HOPPIP
 	db 5, HOPPIP
 	; day
 	db 4, PIDGEY
 	db 4, CATERPIE
+	db 4, BULBASAUR
 	db 5, BELLSPROUT
 	db 5, PIDGEY
-	db 4, WEEDLE
-	db 5, HOPPIP
+	db 5, WEEDLE
 	db 5, HOPPIP
 	; nite
 	db 4, SPINARAK
 	db 4, POLIWAG
+	db 4, BULBASAUR
 	db 5, BELLSPROUT
 	db 5, HOOTHOOT
 	db 4, ZUBAT
-	db 5, GASTLY
 	db 5, GASTLY
 
 	map_id ROUTE_32
